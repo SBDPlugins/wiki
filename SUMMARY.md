@@ -18,5 +18,8 @@
 * [FAQ](other-things/faq.md)
 * [Example panels.yml](other-things/example-panels.md)
 * [For developers](other-things/developers.md)
+
+---
+
 * [Plugin Dependencies](dependencies.md)
 

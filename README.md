@@ -19,8 +19,9 @@ Go to [https://github.com/stijnb1234/wiki](https://github.com/stijnb1234/wiki) t
 | Stijn | Developer and Owner | SBDeveloper\#6661 |
 | Thomas | Developer | ParadoxPixel\#1520 |
 | Finn | Administrator and Bot Developer | FinnB05\#1162 |
-| Kas | Moderator | Mr.Krabs\(Kas\)\#7692 |
-| Sundeep | Moderator | Sundeep\#5683 |
+| Kas | Moderator | Kas\#7692 |
+| Sundeep | Moderator | Sundeep\#5232 |
 | Jorick | Moderator | ╲⎝⧹𝓙𝓸𝓻𝓲𝓬𝓴𝓙𝓾𝓱™.EXE⧸⎠╱\#5913 |
 | Remco | Moderator | RemcoPl\#1111 |
+| Wesley | Designer | Oom\_Dagobert\#1675 |
 
