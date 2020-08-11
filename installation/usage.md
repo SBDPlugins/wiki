@@ -81,13 +81,14 @@ Scanner
 
 _**Waitingrow:**_ 
 
-_**Not available yet in the v2.0 beta!**_
+_Please note, if you create your first waitingrow for an attraction, that you have to make a selection of the row with the WorldEdit wand \(left click for Pos1, right click for Pos2\), and create an WorldGuard region with that selection._
 
-_Please note, if you create your first waitingrow for an attraction, that you have to make a selection of the row with a stick \(left click for Pos1, right click for Pos2\)._ 
-
-\[ThemePark\]   
+\[ThemeParkPlus\]   
 WaitingRow  
-&lt;Ride ID&gt;
+&lt;Ride ID&gt;  
+\[Region ID\]
+
+_The Region ID is only needed if it's the first sign for that Ride._
 
 ### ActionFoto:
 
