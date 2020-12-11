@@ -22,4 +22,5 @@
 ---
 
 * [Plugin Dependencies](dependencies.md)
+* [Version API](version-api.md)
 
