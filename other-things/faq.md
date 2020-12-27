@@ -6,28 +6,26 @@
 
 That's very simple. You have to use the attraction.yml file for this:
 
-1. Go to the **ThemePark** folder in the plugins folder, and select the **attraction.yml** file
-2. Under **attraction:** you have to create a new attraction. Copy it from a attraction you've already made or from here. Pay attention that you get something like this \(with other names\):
+1. Go to the **ThemePark** folder in the plugins folder, there yiy want to go into the **attractions** folder. In here choose the **&lt;region id&gt;.yml** for the region you want to add the attraction to.
+2. Under **attractions:** you have to create a new attraction. Copy it from a attraction you've already made or from here. Pay attention that you get something like this \(with other names\):
 
-{% code title="attraction.yml" %}
+{% code title="<region id>.yml" %}
 ```yaml
-attraction:
+attractions:
   test:
     name: "&aTest"
-    region_id: "fantasy"
     type: RIDE
     status: CLOSED
     location: "world:418:65:30"
   test2:
     name: "&aTest 2"
-    region_id: "fantasy"
     type: RIDE
     status: CLOSED
     location: "world:418:65:30"
 ```
 {% endcode %}
 
-In this case, **test is the ID of the attraction**. **name** contians the name of the ride, **region\_id** is the **ID of the region**. It has to be a region that exists! **type** is **RIDE**. If you want to create a show, you have to put **SHOW** there. The **status** is **CLOSED**, but you can change it in-game. The **location** can also be changed in-game.
+In this case, ****test is the **ID** of the **attraction**. **name** contians the name of the ride, **type** is **RIDE**. If you want to create a show, you have to put **SHOW** there. The **status** is **CLOSED** but you can use any status for this, you can also change it in-game. The **location** can also be changed in-game.
 
 ### How do you disable the item in specific worlds
 
