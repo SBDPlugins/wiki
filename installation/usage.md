@@ -11,12 +11,18 @@ Now you can use the plugins and panels. Here we will give you some help about us
 * **/themepark warp &lt;Attraction ID&gt;** - Teleport to an attraction. 
 * **/themepark toggle item** - Toggles the join item on or off. 
 * **/themepark getitem \[Player\]** - Give the item to yourself or another player. 
-* **/themepark reload** - Reload the plugin. 
-* **/themepark regionname &lt;RegionID&gt; &lt;New Name&gt;** - Change the name of a region. 
-* **/themepark regionlore &lt;RegionID&gt; &lt;Index&gt; &lt;New Lore&gt;** - Change the lore of a region. For index use 0 for the first line, and 1 for the second line... You can use \_ for a space.
-* **/themepark setlocation &lt;Attraction ID&gt;** - Set the location of an attraction to your current location. 
-* **/themepark attraction &lt;Attraction ID&gt; &lt;New Status&gt;** - Change the status of an attraction. 
+* **/themepark region create &lt;Region ID&gt; &lt;Name&gt;** - Create a region with id and name
+* **/themepark region name &lt;Region ID&gt; &lt;New Name&gt;** - Change the name of a region. 
+* **/themepark region remove &lt;Region ID&gt;** - Remove region with ID including it's attractions
+* **/themepark attraction create &lt;Region ID&gt; &lt;Attraction ID&gt; &lt;type&gt; &lt;name&gt;** - Create an attraction in region. Type can be **RIDE,** **SHOW** or **GLOBAL**
+* **/themepark attraction name &lt;Attraction ID&gt; &lt;New Name&gt;** - Change the name of a attraction. 
+* **/themepark attraction status &lt;Attraction ID&gt; &lt;New Status&gt;** - Change the status of an attraction. 
+* **/themepark attraction location &lt;Attraction ID&gt;** - Set the location of an attraction to your current location. 
+* **/themepark attraction remove &lt;Attraction ID&gt;** - Remove attraction with ID
 * **/status** - Opens the menu.
+* **/ridecount help** - Display the help menu.
+* **/ridecount get &lt;Player Name&gt; &lt;Attraction ID&gt;** - Get players ridecount for attraction
+* **/ridecount add &lt;Selector&gt; &lt;Attraction ID&gt; &lt;amount&gt;** - Add certain amount to ridecount for one player by username or using selectors like **@p**
 
 You can change the /themepark command to a custom command in the config!   
 **&lt;&gt; is required and \[\] is optional**
@@ -26,7 +32,6 @@ You can change the /themepark command to a custom command in the config!
 ### ThemeParkConnector:
 
 * **/tpc reload** - Reload the plugin.
-* **/tpc ridecount &lt;Attraction ID&gt; &lt;Selector&gt;** - Add one ride count to a/multiple player\(s\).
 * **/tpc redeem &lt;Voucher&gt;** - Redeem a voucher for a show.
 * **/tpc state &lt;Attraction ID&gt; &lt;Button ID&gt; &lt;State ID&gt;** - Change the state of a button for an attraction at the online panel. Most of the time, you use this command in a commandblock.
 
