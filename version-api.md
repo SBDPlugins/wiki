@@ -8,7 +8,7 @@ description: This page contains the docs for our Version API
 
 The 3 GET requests below are public, and don't need any authentication.
 
-{% api-method method="get" host="http://updates.sbdplugins.nl:3222" path="/api/v2/plugins" %}
+{% api-method method="get" host="https://updates.sbdplugins.nl" path="/api/v2/plugins" %}
 {% api-method-summary %}
 Get plugins
 {% endapi-method-summary %}
@@ -45,7 +45,7 @@ Everything is ok.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="get" host="http://updates.sbdplugins.nl:3222" path="/api/v2/plugins/:id" %}
+{% api-method method="get" host="https://updates.sbdplugins.nl" path="/api/v2/plugins/:id" %}
 {% api-method-summary %}
 Get plugin by ID
 {% endapi-method-summary %}
@@ -75,7 +75,7 @@ Everything is ok. If you get an empty response, there is no plugin with this ID.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="get" host="http://updates.sbdplugins.nl:3222" path="/api/v2/download/:id" %}
+{% api-method method="get" host="https://updates.sbdplugins.nl" path="/api/v2/download/:id" %}
 {% api-method-summary %}
 Download a plugin by ID
 {% endapi-method-summary %}
