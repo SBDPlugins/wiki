@@ -95,6 +95,12 @@ WaitingRow
 
 _The Region ID is only needed if it's the first sign for that Ride._
 
+_**Malfunction GUI:**_
+
+\[ThemeParkPlus\]  
+_****_Malfunction  
+&lt;RideID&gt;
+
 ### ActionFoto:
 
 * **/af info** - Information about the plugin

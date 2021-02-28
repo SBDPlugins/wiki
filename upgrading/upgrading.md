@@ -2,7 +2,7 @@
 description: Upgrade from an old version to the newest version?
 ---
 
-# Upgrading
+# Panel upgrading
 
 Welcome to the upgrade guide!
 

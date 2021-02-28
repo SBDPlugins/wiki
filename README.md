@@ -8,7 +8,7 @@ SBDevelopment is a small development group that makes plugins for Spigot, mainly
 
 ## Contribute to our wiki:
 
-Would you like to help us improve the wiki? We would love to! All help is welcome.
+Would you like to help us improve the wiki? We would love to! All your help is welcome.
 
 Go to [https://github.com/stijnb1234/wiki](https://github.com/stijnb1234/wiki) to modify the wiki. Fork the repository, change what you want to change, and create a Pull Request.
 
@@ -16,12 +16,13 @@ Go to [https://github.com/stijnb1234/wiki](https://github.com/stijnb1234/wiki) t
 
 | Name: | Role: | Discord: |
 | :--- | :--- | :--- |
-| Stijn | Developer and Owner | SBDeveloper\#6661 |
-| Thomas | Developer | ParadoxPixel\#1520 |
-| Finn | Administrator and Bot Developer | FinnB05\#1162 |
-| Kas | Moderator | Kas\#7692 |
-| Sundeep | Moderator | Sundeep\#5232 |
-| Jorick | Moderator | ╲⎝⧹𝓙𝓸𝓻𝓲𝓬𝓴𝓙𝓾𝓱™.EXE⧸⎠╱\#5913 |
-| Remco | Moderator | RemcoPl\#1111 |
+| Stijn | Developer and Owner | Stijn \| SBDeveloper\#6661 |
+| Thomas | Developer | ParadoxPixel\#5747 |
+| Finn | Assistant Developer \(Bot\) | John Laurens\#1162 |
+| Younes | Assistant Developer \(NPM\) | YounesTheDead™\#8528 |
+| Kas | Support | Kas\#9211 |
+| Sundeep | Support | Sundeep\#2005 |
+| Jorick | Support | 【ＤＲ．𝓙𝓸𝓻𝓲𝓬𝓴𝓙𝓾𝓱】\#4705 |
+| Remco | Support | RemcoPl\#1111 |
 | Wesley | Designer | Oom\_Dagobert\#1675 |
 

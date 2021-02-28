@@ -9,7 +9,7 @@
 
 ## Upgrading
 
-* [Upgrading](upgrading/upgrading.md)
+* [Panel upgrading](upgrading/upgrading.md)
 * [v2.x](upgrading/v2.x.md)
 
 ## Other things

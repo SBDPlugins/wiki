@@ -65,75 +65,12 @@ The socket can't connect if:
 * The attraction is **not OPEN**/**CLOSED** AND **not ACTIVE**/**INACTIVE**.
 * The attraction is **not** in the **panels.yml** **file**.
 
-### How can I change the verification mail?
-
-1. Create a file in app/Notifications called VerifyEmail.php and put the code below in it:
-
-{% code title="VerifyEmail.php" %}
-```php
-<?php
-namespace App\Notifications;
-use Illuminate\Bus\Queueable;
-use Illuminate\Notifications\Notification;
-use Illuminate\Contracts\Queue\ShouldQueue;
-use Illuminate\Notifications\Messages\MailMessage;
-use Illuminate\Support\Carbon;
-use Illuminate\Support\Facades\URL;
-use Illuminate\Support\Facades\Lang;
-use Illuminate\Auth\Notifications\VerifyEmail as VerifyEmailBase;
-
-class VerifyEmail extends VerifyEmailBase
-{
-    public function toMail($notifiable)
-    {
-        if (static::$toMailCallback) {
-            return call_user_func(static::$toMailCallback, $notifiable);
-        }
-		
-		//Change content below
-        return (new MailMessage)
-            ->subject(Lang::getFromJson('Verify Email Address'))
-            ->line(Lang::getFromJson('Please click the button below to verify your email address.'))
-            ->action(
-                Lang::getFromJson('Verify Email Address'),
-                $this->verificationUrl($notifiable)
-            )
-            ->line(Lang::getFromJson('If you did not create an account, no further action is required.'));
-    }
-}
-```
-{% endcode %}
-
-2. Open the User.php file in the app folder. Insert this below row 8:
-
-{% code title="User.php" %}
-```php
-use App\Notifications\VerifyEmail;
-```
-{% endcode %}
-
-And this at the bottom of that file:
-
-{% code title="User.php" %}
-```php
-/**
- * Send the email verification notification.
- *
- * @return void
- */
-public function sendEmailVerificationNotification()
-{
-    $this->notify(new VerifyEmail); // my notification
-}
-```
-{% endcode %}
-
 ### How can I setup the OpenAudioMC integration?
 
-1. Go to your server and type **/oa plus**. Then go to the API tab on that page. Copy the URL labeled **V1 - Get token** and paste it into the .env file at **OPENAUDIOMC\_URL**.
-2. Change **&lt;PLAYER UUID&gt;** into **%UUID%** at the url in your .env file, or else it won't load the player UUID correctly.
+1. Go to the [CraftMend Account panel](https://account.craftmend.com/). Create a new account or login to your account. Get a new fingerprint from [the fingerprint page](https://account.craftmend.com/account/fingerprint) and run the connect command \(/oa fingerprint &lt;FingerPrint&gt;\) in your server. Then go to the [API page](https://account.craftmend.com/account/api). Copy the URL labeled **Online Players - V1** and paste it into the .env file at **OPENAUDIOMC\_URL**.
+2. Change **{your api key}** into the API token you can get on the same page, and change **{server id}** into the Server ID of the server you want to connect \(you can find that on the server page\).
 
-![](../.gitbook/assets/image.png)
+![](../.gitbook/assets/image%20%281%29.png)
 
 ## ActionFoto:
 

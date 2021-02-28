@@ -1,24 +1,22 @@
 ---
-description: 'The setup of ThemePark is easy, if you follow this guide!'
+description: The setup of our plugins is easy. Just follow this guide!
 ---
 
 # The Setup
 
-## Installation of the plugins:
+## Installation of ThemePark:
 
-### [Free version:](https://www.spigotmc.org/resources/themepark.48648/)
+Just [download the plugin on Spigot](https://www.spigotmc.org/resources/themepark.48648/), and put the JAR file into your **/plugins** folder. The plugin will do everything for you, and you can change everything in the files. If you want to use all the functions of ThemeParkPlus Basic, you have to do some more things.
 
-Just download the plugin of Spigot, and install it into your /plugins folder. The plugin will do everything for you, and you can change everything in the files.If you want to use all the functions of ThemeParkPlus Basic, you have to do some more things.
+## Installation of ThemeParkPlus:
 
-{% hint style="info" %}
-With the old plugin it was possible to add attractions via commands. From now on this has to be done via the attraction.yml file.
-{% endhint %}
+For ThemeParkPlus you need [WorldEdit ](https://dev.bukkit.org/projects/worldedit)and [WorldGuard ](https://dev.bukkit.org/projects/worldguard)for the waiting row system, and [Vault ](https://dev.bukkit.org/projects/vault/files)for the FastPass system. Just put all the plugins in you **/plugins** **folder** and **restart** the server.
 
-### Paid versions:
+## Installation of ThemeParkConnector:
 
-For the Plus plugin you need the [Free ](https://www.spigotmc.org/resources/themepark.48648/)version, and [Vault ](https://dev.bukkit.org/projects/vault/files)for the FastPass system. Just put all the plugins in you **/plugins** **folder** and **restart** the server.
+_This plugin is only required if you want to use ThemeParkPanel\(Plus\). It will connect your Minecraft server with our panel._
 
-If you're going to install the **ThemeParkPanel**, you also need the **ThemeParkConnector**. This plugin connects the panel with the Spigot server, so that the panel can work. Just put this plugin in your **/plugins folder** as well. ****For usage with the panel, you have to connect the Free version, and the Connector to the database that you're going to use for the panel. Please see step 2 of the ThemeParkPanel installation.
+Just put this plugin in your **/plugins folder**. ****For usage with the panel, you have to connect **ThemePark** to the database that you're going to use for the panel. Please see _**step 2**_ of the ThemeParkPanel installation.
 
 If you're going to install the **ThemeParkPanelPlus**, you have to change some things in the settings.yml of the **ThemeParkConnector.** Change it to something like this:
 
@@ -32,11 +30,11 @@ socket:
 ```
 {% endcode %}
 
-You don't have to touch the **url**. At the **panel**, you have to change it to the **panel URL**. If your panel is located at **https://something.com/panel**, then you have to enter **https://something.com/panel/panel/** there. Also, you have to make up an ID, that is **unique** for your server, like your **server name**. Put it at the **id**.
+_You don't have to touch the **url**._ At the **panel**, you have to change it to the **panel URL**. If your panel is located at **https://something.com/panel**, then you have to enter **https://something.com/panel/panel/** there. Also, you have to make up an ID, that is **unique** for your server, like your **server name**. Put it at the **id**.
 
 ## Installation of ThemeParkPanel:
 
-### Dependencies:
+### Requirements:
 
 * A webhosting with:
   * 1 MYSQL database
@@ -46,7 +44,7 @@ You don't have to touch the **url**. At the **panel**, you have to change it to 
   * The ThemePark plugin
   * The ThemeParkConnector plugin
 
-**You can install the panel in 2 ways. If your webhosting has SSH access, follow these steps. Otherwise, follow the steps for webhosting without SSH access.**
+**You can install the panel in 2 ways. If you have your own VPS or your webhosting has SSH access, follow these steps. Otherwise, follow the steps for webhosting without SSH access.**
 
 ### **Installation with SSH Access support:**
 
@@ -137,6 +135,10 @@ Now your database is ready for usage.
 
 #### 5. Rewriting users to your panel \(public folder\):
 
+{% hint style="info" %}
+The step descriped below will only work if you are using an **Apache2** webserver. For the **Nginx** installation, you have to set the basepath to the /public folder. If you need help with this, please contact us in our Discord server.
+{% endhint %}
+
 Because of safety reasons, all the files who are needed for users aren't included in the main map, but in the /public folder. You have to redirect the users to this folder, by using the .htaccess file. It's included in the ZIP, but you **HAVE TO** change it.
 
 Create a .htaccess file in the panel main folder, and put this into it:
@@ -164,7 +166,7 @@ Create a .htaccess file in the panel main folder, and put this into it:
 ```
 {% endcode %}
 
-_Code from:_ [_https://gist.github.com/liaotzukai/8e61a3f6dd82c267e05270b505eb6d5a_](https://gist.github.com/liaotzukai/8e61a3f6dd82c267e05270b505eb6d5a)\_\_
+_Source:_ [_https://gist.github.com/liaotzukai/8e61a3f6dd82c267e05270b505eb6d5a_](https://gist.github.com/liaotzukai/8e61a3f6dd82c267e05270b505eb6d5a)\_\_
 
 ### Installation without SSH Access:
 
@@ -225,7 +227,7 @@ Create a .htaccess file in the panel main folder, and put this into it:
 ```
 {% endcode %}
 
-_Code from:_ [_https://gist.github.com/liaotzukai/8e61a3f6dd82c267e05270b505eb6d5a_](https://gist.github.com/liaotzukai/8e61a3f6dd82c267e05270b505eb6d5a)\_\_
+_Source:_ [_https://gist.github.com/liaotzukai/8e61a3f6dd82c267e05270b505eb6d5a_](https://gist.github.com/liaotzukai/8e61a3f6dd82c267e05270b505eb6d5a)\_\_
 
 ## Installation of ThemeParkPanelPlus:
 
@@ -269,7 +271,7 @@ socket:
 
 Just download the plugin on the site, and install it into your /plugins folder. The plugin will do everything for you, and you can change everything in the files.
 
-**Note that there are 2 dependencies needed to run this plugin you can find them** [**here**](https://www.spigotmc.org/resources/api-mapmanager.19198/) **and** [**here**](https://www.spigotmc.org/resources/api-packetlistenerapi.2930/)**.**
+**Note that there are 2 dependencies needed to run this plugin. You can find them** [**here**](https://www.spigotmc.org/resources/api-mapmanager.19198/) **and** [**here**](https://www.spigotmc.org/resources/api-packetlistenerapi.2930/)**.**
 
 ## Installation of **ThemeParkPlus ridecount add-on**:
 
