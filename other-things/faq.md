@@ -94,7 +94,7 @@ Open the my.cnf file and change **max\_allowed\_packet** from **32M** to **256M*
 
 ## ThemePark Ridecount Add-on:
 
-### All the names of bedrock players are shown as "Unkown". How to fix?
+### All the names of bedrock players are shown as "Unknown". How to fix?
 
 To look up the names of offline bedrock players, we use an API. This API requires a token to work. You can claim a token like this:
 
