@@ -2,25 +2,30 @@
 
 * [Homepage](README.md)
 
-## Installation
+## ThemePark\(Plus\) <a id="themepark"></a>
 
-* [The Setup](installation/setup.md)
-* [The Usage](installation/usage.md)
+* [Setup](themepark/setup.md)
+* [Setup of the Panels](themepark/setup-of-the-panels.md)
+* [Usage](themepark/usage.md)
+* [Permissions](themepark/permissions.md)
+* [FAQ](themepark/faq.md)
+* [Upgrading the Panels](themepark/v2.x.md)
 
-## Upgrading
+## VehiclesPlus
 
-* [Panel upgrading](upgrading/upgrading.md)
-* [v2.x](upgrading/v2.x.md)
+* [\#SOON](vehiclesplus/soon.md)
 
-## Other things
+## ActionFoto
 
-* [Tutorials](other-things/tutorials.md)
-* [FAQ](other-things/faq.md)
-* [Example panels.yml](other-things/example-panels.md)
-* [For developers](other-things/developers.md)
+* [Setup](actionfoto/setup.md)
+* [Usage](actionfoto/usage.md)
+* [Permissions](actionfoto/permissions.md)
+* [FAQ](actionfoto/faq.md)
 
----
+## ThemePark Ridecount Add-on
 
-* [Plugin Dependencies](dependencies.md)
-* [Version API](version-api.md)
+* [Setup](themepark-ridecount-add-on/setup.md)
+* [Usage](themepark-ridecount-add-on/usage.md)
+* [Permissions](themepark-ridecount-add-on/permissions.md)
+* [FAQ](themepark-ridecount-add-on/faq.md)
 

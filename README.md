@@ -1,6 +1,6 @@
 # Homepage
 
-Welcome to the wiki of SBDevelopment! This wiki gives you information about all the ThemePark plugins! For the other plugins, please join our [discord](https://discord.gg/R6ax6z2).
+Welcome to the wiki of SBDevelopment! This wiki gives you information about all the ThemePark plugins! For the other plugins, please join our [Discord](https://discord.gg/R6ax6z2).
 
 ## What is SBDevelopment?
 
