@@ -4,6 +4,8 @@ description: How to install and configure VehiclePlus
 
 # Setup
 
+## Installing the plugin
+
 Just [download the plugin on Spigot](https://www.spigotmc.org/resources/themepark.48648/) or Polymart, and put the JAR file into your **/plugins** folder. The plugin will do everything for you, and you can change everything in the files. If you want to use all the functions of VehiclePlus, you have to do some more things.
 
 ### Downloading the dependencies:
