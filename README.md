@@ -24,5 +24,6 @@ Go to [https://github.com/stijnb1234/wiki](https://github.com/stijnb1234/wiki) t
 | Sundeep | Support | Sundeep\#2005 |
 | Jorick | Support | 【ＤＲ．𝓙𝓸𝓻𝓲𝓬𝓴𝓙𝓾𝓱】\#4705 |
 | Remco | Support | RemcoPl\#1111 |
+| Vincent | Support | Vincent\#9557 |
 | Wesley | Designer | Oom\_Dagobert\#1675 |
 

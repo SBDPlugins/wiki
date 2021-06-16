@@ -13,7 +13,8 @@
 
 ## VehiclesPlus
 
-* [\#SOON](vehiclesplus/soon.md)
+* [VehiclePlus](vehiclesplus/vehicleplus-1.md)
+* [Setup](vehiclesplus/vehicleplus.md)
 
 ## ActionFoto
 

@@ -1,6 +1,10 @@
 # Setup
 
-You need to install this plugin just like ActionFoto. Download the plugin on the site, install it into your /plugins folder.
+### Downloading the dependencies:
 
-**Note that this plugin uses the same dependencies as ActionFoto.**
+This plugin requires **MapManager** and **PacketListenerAPI** to function correctly. You can download these plugins for free on SpigotMC.
+
+### Installing the plugin:
+
+Then you need to download the plugin itself from our website. Drop the JAR into the plugins folder, and restart your server. That's it!
 
