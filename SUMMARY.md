@@ -11,6 +11,10 @@
 * [FAQ](themepark/faq.md)
 * [Upgrading the Panels](themepark/v2.x.md)
 
+## ParkPlusMC
+
+* [ParkPlusMC Wiki](https://wiki.parkplusmc.com/)
+
 ## VehiclesPlus
 
 * [VehiclePlus](vehiclesplus/vehicleplus-1.md)
