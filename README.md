@@ -18,11 +18,10 @@ Go to [https://github.com/stijnb1234/wiki](https://github.com/stijnb1234/wiki) t
 | :--- | :--- | :--- |
 | Stijn | Developer and Owner | Stijn \| SBDeveloper\#6661 |
 | Thomas | Developer | ParadoxPixel\#5747 |
-| Finn | Assistant Developer \(Bot\) | John Laurens\#1162 |
+| Finn | Assistant Developer \(Bot\) | FemkeB05\#1162 |
 | Younes | Assistant Developer \(NPM\) | YounesTheDead™\#8528 |
 | Kas | Support | Kas\#9211 |
-| Sundeep | Support | Sundeep\#2005 |
-| Jorick | Support | 【ＤＲ．𝓙𝓸𝓻𝓲𝓬𝓴𝓙𝓾𝓱】\#4705 |
+| Jorick | Support | 【ＤＲ．𝓙𝓸𝓻𝓲𝓬𝓴𝓙𝓾𝓱 𝓦𝓮𝓵𝓵𝓼 vuller】\#4705 |
 | Remco | Support | RemcoPl\#1111 |
 | Vincent | Support | Vincent\#9557 |
 | Wesley | Designer | Oom\_Dagobert\#1675 |
