@@ -20,6 +20,7 @@ Go to [https://github.com/stijnb1234/wiki](https://github.com/stijnb1234/wiki) t
 | Thomas | Developer | ParadoxPixel\#5747 |
 | Finn | Assistant Developer \(Bot\) | FemkeB05\#1162 |
 | Younes | Assistant Developer \(NPM\) | YounesTheDead™\#8528 |
+| Collin | Assistant Developer \(VehiclesPlus\) & Support | Collinvht\#9075 |
 | Kas | Support | Kas\#9211 |
 | Jorick | Support | 【ＤＲ．𝓙𝓸𝓻𝓲𝓬𝓴𝓙𝓾𝓱 𝓦𝓮𝓵𝓵𝓼 vuller】\#4705 |
 | Remco | Support | RemcoPl\#1111 |
