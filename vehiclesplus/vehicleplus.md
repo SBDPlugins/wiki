@@ -1,5 +1,5 @@
 ---
-description: How to install and configure VehiclePlus
+description: How to install and configure VehiclePlus.
 ---
 
 # Setup
@@ -32,5 +32,11 @@ Your URL must be a **direct link** to your resource pack! If it does not end in 
 
 ## \(Optional\) Editing your configuration
 
-Once your server has been restarted, you will have new configuration files under `plugins/VehiclesPlus`. Take a look at our [Configuration page]() to determine whether you would like to change your configuration. Once you have edited the configurations, save your files and restart the server.
+Once your server has been restarted, you will have new configuration files under `plugins/VehiclesPlus`. Take a look at our [Configuration page](configuration.md) to determine whether you would like to change your configuration. Once you have edited the configurations, save your files and restart the server.
+
+## Setting Up Permissions
+
+Depending on how you'd like to use your server, you may have to set up permissions. We suggest using [LuckPerms](https://luckperms.net) to set up permissions.
+
+A list of permissions for VehiclesPlus can be found [here](permissions.md).
 
