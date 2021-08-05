@@ -101,7 +101,11 @@ php artisan migrate --force
 
 Now your database is ready for usage.
 
-#### 5. Rewriting users to your panel \(public folder\):
+#### 5. Installing the theming ZIP
+
+Now install the Theming ZIP. Just unzip it, upload, and override if required.
+
+#### 6. Rewriting users to your panel \(public folder\):
 
 {% hint style="info" %}
 The step descriped below will only work if you are using an **Apache2** webserver. For the **Nginx** installation, you have to set the basepath to the /public folder. If you need help with this, please contact us in our Discord server.
@@ -166,7 +170,11 @@ For the **MAIL\_** settings you have to create a mail account, and then lookup t
 **Pay attention!** Some hostings are using SSL or no encryption for the SMTP server. Then leave the MAIL\_ENCRYPTION setting empty.
 {% endhint %}
 
-#### 3. Rewriting users to your panel \(public folder\):
+#### 3. Installing the theming ZIP
+
+Now install the Theming ZIP. Just unzip it, upload, and override if required.
+
+#### 4. Rewriting users to your panel \(public folder\):
 
 Because of safety reasons, all the files who are needed for users aren't included in the main map, but in the /public folder. You have to redirect the users to this folder, by using the .htaccess file.
 
