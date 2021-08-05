@@ -150,7 +150,7 @@ Go to the homepage of DirectAdmin and go to **MYSQL Management**. Click on **Cre
 After you've created it, you have to click on your database, and at **Access Hosts**, you have to put in a **% and click on Add Host**, so that the Minecraft server can find the database and can connect to it. **This is VERY important!**
 {% endhint %}
 
-Now you have to upload the SQL-file, so that the plugin can upload his attractions. Open your database with PHPMyAdmin, and go to Import in the menu, and then choose the SQL-file at "File to import:". Then click on the Start button. Now it's uploaded.
+Now you have to upload the SQL-file \(which can be found in the Non-SSH zip\), so that the plugin can upload his attractions. Open your database with PHPMyAdmin, and go to Import in the menu, and then choose the SQL-file at "File to import:". Then click on the Start button. Now it's uploaded.
 
 #### 2. Installing the panel to your webserver:
 
