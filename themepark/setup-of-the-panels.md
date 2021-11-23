@@ -177,7 +177,7 @@ Nginx uses config files for setup. Below is an EXAMPLE configuration, which can 
 
 Make sure to replace %DOMAIN% (everywhere) by your full domain, and %PATH% by the full installation path.
 
-This config assumes you are using PHP 8.0. If you have another PHP version installed, please change the version on lin
+This config assumes you are using PHP 8.0. If you have another PHP version installed, please change the version on line 28.
 
 {% code title="/etc/nginx/sites-available/themeparkpanel.conf" %}
 ```nginx
@@ -362,7 +362,7 @@ Nginx uses config files for setup. Below is an EXAMPLE configuration, which can 
 
 Make sure to replace %DOMAIN% (everywhere) by your full domain, and %PATH% by the full installation path.
 
-This config assumes you are using PHP 8.0. If you have another PHP version installed, please change the version on lin
+This config assumes you are using PHP 8.0. If you have another PHP version installed, please change the version on line 28.
 
 {% code title="/etc/nginx/sites-available/themeparkpanel.conf" %}
 ```nginx
