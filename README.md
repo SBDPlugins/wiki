@@ -11,5 +11,3 @@ SBDevelopment is a small development group that makes plugins for Spigot, mainly
 Would you like to help us improve the wiki? We would love to! All your help is welcome.
 
 Go to [https://github.com/stijnb1234/wiki](https://github.com/stijnb1234/wiki) to modify the wiki. Fork the repository, change what you want to change, and create a Pull Request.&#x20;
-
-## Our
