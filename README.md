@@ -10,20 +10,6 @@ SBDevelopment is a small development group that makes plugins for Spigot, mainly
 
 Would you like to help us improve the wiki? We would love to! All your help is welcome.
 
-Go to [https://github.com/stijnb1234/wiki](https://github.com/stijnb1234/wiki) to modify the wiki. Fork the repository, change what you want to change, and create a Pull Request.
+Go to [https://github.com/stijnb1234/wiki](https://github.com/stijnb1234/wiki) to modify the wiki. Fork the repository, change what you want to change, and create a Pull Request.&#x20;
 
-## Our team:
-
-| Name: | Role: | Discord: |
-| :--- | :--- | :--- |
-| Stijn | Developer and Owner | Stijn \| SBDeveloper\#6661 |
-| Thomas | Developer | ParadoxPixel\#5747 |
-| Finn | Assistant Developer \(Bot\) | FemkeB05\#1162 |
-| Younes | Assistant Developer \(NPM\) | YounesTheDead™\#8528 |
-| Collin | Assistant Developer \(VehiclesPlus\) & Support | Collinvht\#9075 |
-| Kas | Support | Kas\#9211 |
-| Jorick | Support | 【ＤＲ．𝓙𝓸𝓻𝓲𝓬𝓴𝓙𝓾𝓱 𝓦𝓮𝓵𝓵𝓼 vuller】\#4705 |
-| Remco | Support | RemcoPl\#1111 |
-| Vincent | Support | Vincent\#9557 |
-| Wesley | Designer | Oom\_Dagobert\#1675 |
-
+## Our
