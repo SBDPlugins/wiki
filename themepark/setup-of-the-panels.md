@@ -207,7 +207,7 @@ server {
 
         index index.php index.html index.htm index.nginx-debian.html;
 
-        server_name example.com www.example.com;
+        server_name %DOMAIN%;
 
         location / {
                 try_files $uri $uri/ /index.php?$query_string;
@@ -215,7 +215,7 @@ server {
 
         location ~ \.php$ {
                 include snippets/fastcgi-php.conf;
-                fastcgi_pass unix:/run/php/php8.0-fpm.sock;
+                fastcgi_pass unix:/run/php/php8.1-fpm.sock;
         }
 
         location ~ /\.ht {
@@ -232,7 +232,6 @@ server {
 Then you need to enable your configuration, like this:
 
 ```bash
-# If you use CentOS, you can ignore this command.
 sudo ln -s /etc/nginx/sites-available/themeparkpanel.conf /etc/nginx/sites-enabled/themeparkpanel.conf
 
 # Then restart NGINX
@@ -258,15 +257,13 @@ server {
         server_name %DOMAIN%;
         index index.php index.html index.htm index.nginx-debian.html;
 
-        server_name example.com www.example.com;
-
         location / {
                 try_files $uri $uri/ /index.php?$query_string;
         }
 
         location ~ \.php$ {
                 include snippets/fastcgi-php.conf;
-                fastcgi_pass unix:/run/php/php8.0-fpm.sock;
+                fastcgi_pass unix:/run/php/php8.1-fpm.sock;
         }
 
         location ~ /\.ht {
@@ -283,7 +280,6 @@ server {
 Then you need to enable your configuration, like this:
 
 ```bash
-# If you use CentOS, you can ignore this command.
 sudo ln -s /etc/nginx/sites-available/themeparkpanel.conf /etc/nginx/sites-enabled/themeparkpanel.conf
 
 # Then restart NGINX
