@@ -34,7 +34,7 @@ In your FTP, **select your domain** and put the **files of the SSH ZIP** into yo
 
 #### 3. Setting up the database:
 
-Go to the homepage of DirectAdmin and go to **MYSQL Management**. Click on **Create new Database** and fill in the data. Also, save this data somewhere, because you need it later.
+Go to the homepage of DirectAdmin and go to **MySQL Management**. Click on **Create new Database** and fill in the data. Also, save this data somewhere, because you need it later.
 
 {% hint style="danger" %}
 After you've created it, you have to click on your database, and at **Access Hosts**, you have to put in a **% and click on Add Host**, so that the Minecraft server can find the database and can connect to it. **This is VERY important!**
@@ -69,11 +69,7 @@ php artisan migrate --force
 
 Now your database is ready for usage.
 
-#### 5. Installing the theming ZIP
-
-Now install the Theming ZIP. Just unzip it, upload, and override if required.
-
-#### 6. Rewriting users to your panel (public folder):
+#### 5. Rewriting users to your panel (public folder):
 
 Because of safety, all the files who are not intended for users, are in the /public folder. This means you have to redirect the users to that folder.
 
@@ -81,7 +77,7 @@ Because of safety, all the files who are not intended for users, are in the /pub
 
 {% tabs %}
 {% tab title="Apache2" %}
-There is an _.htaccess_ file in the ZIP. Most of the time this file works fine. It's also included below, in the case it's missing.
+**There is an **_**.htaccess**_** file in the ZIP. Most of the time this file works fine.** _It's also included below, in the case it's missing._
 
 
 
@@ -228,7 +224,7 @@ systemctl restart nginx
 
 #### 1. Setting up the database:
 
-Go to the homepage of DirectAdmin and go to **MYSQL Management**. Click on **Create new Database** and fill in the data. Also, save this data somewhere, because you need it later.
+Go to the homepage of DirectAdmin and go to **MySQL Management**. Click on **Create new Database** and fill in the data. Also, save this data somewhere, because you need it later.
 
 {% hint style="danger" %}
 After you've created it, you have to click on your database, and at **Access Hosts**, you have to put in a **% and click on Add Host**, so that the Minecraft server can find the database and can connect to it. **This is VERY important!**
@@ -254,21 +250,11 @@ For the **MAIL\_** settings you have to create a mail account, and then lookup t
 **Pay attention!** Some hostings are using SSL or no encryption for the SMTP server. Then leave the MAIL\_ENCRYPTION setting empty.
 {% endhint %}
 
-#### 3. Installing the theming ZIP
-
-Now install the Theming ZIP. Just unzip it, upload, and override if required.
-
-#### 4. Rewriting users to your panel (public folder):
+#### 3. Rewriting users to your panel (public folder):
 
 Because of safety, all the files who are not intended for users, are in the /public folder. This means you have to redirect the users to that folder.
 
-**Please choose the type of web server you want to use.** If you don't know which type is used, try the Apache2 configuration first. Most shared hostings use Apache2.
-
-{% tabs %}
-{% tab title="Apache2" %}
-There is an _.htaccess_ file in the ZIP. Most of the time this file works fine. It's also included below, in the case it's missing.
-
-
+**There is an **_**.htaccess**_** file in the ZIP for this. Most of the** time, **this file works fine out of the box.** _It's also included below, in the case it's missing._
 
 {% code title=".htaccess" %}
 ```typescript
@@ -294,120 +280,6 @@ There is an _.htaccess_ file in the ZIP. Most of the time this file works fine. 
 {% endcode %}
 
 _Source:_ [_https://gist.github.com/liaotzukai/8e61a3f6dd82c267e05270b505eb6d5a_](https://gist.github.com/liaotzukai/8e61a3f6dd82c267e05270b505eb6d5a)__
-{% endtab %}
-
-{% tab title="Nginx With SSL" %}
-Nginx uses config files for setup. Below is an EXAMPLE configuration, which can be used to redirect users to the /public folder, while also supporting HTTPS / SSL.
-
-Make sure to replace %DOMAIN% (everywhere) by your full domain, and %PATH% by the full installation path.
-
-This config assumes you are using PHP 8.0. If you have another PHP version installed, please change the version on line 28.
-
-{% code title="/etc/nginx/sites-available/themeparkpanel.conf" %}
-```nginx
-server {
-        listen 80;
-        listen [::]:80;
-
-        server_name %DOMAIN%;
-        return 301 https://$server_name$request_uri;
-}
-
-server {
-        listen 443 ssl http2;
-        listen [::]:443 ssl http2;
-        
-        ssl_certificate /etc/letsencrypt/live/%DOMAIN%/fullchain.pem;
-        ssl_certificate_key /etc/letsencrypt/live/%DOMAIN%/privkey.pem;
-
-        root /%PATH%/public;
-
-        index index.php index.html index.htm index.nginx-debian.html;
-
-        server_name example.com www.example.com;
-
-        location / {
-                try_files $uri $uri/ /index.php?$query_string;
-        }
-
-        location ~ \.php$ {
-                include snippets/fastcgi-php.conf;
-                fastcgi_pass unix:/run/php/php8.0-fpm.sock;
-        }
-
-        location ~ /\.ht {
-                deny all;
-        }
-
-        location ~ /.well-known {
-                allow all;
-        }
-}
-```
-{% endcode %}
-
-Then you need to enable your configuration, like this:
-
-```bash
-# If you use CentOS, you can ignore this command.
-sudo ln -s /etc/nginx/sites-available/themeparkpanel.conf /etc/nginx/sites-enabled/themeparkpanel.conf
-
-# Then restart NGINX
-systemctl restart nginx
-```
-{% endtab %}
-
-{% tab title="NGINX Without SSL" %}
-Nginx uses config files for setup. Below is an EXAMPLE configuration, which can be used to redirect users to the /public folder.
-
-Make sure to replace %DOMAIN% (everywhere) by your full domain, and %PATH% by the full installation path.
-
-This config assumes you are using PHP 8.0. If you have another PHP version installed, please change the version on line 28.
-
-{% code title="/etc/nginx/sites-available/themeparkpanel.conf" %}
-```nginx
-server {
-        listen 80;
-        listen [::]:80;
-        
-        root /%PATH%/public;
-        
-        server_name %DOMAIN%;
-        index index.php index.html index.htm index.nginx-debian.html;
-
-        server_name example.com www.example.com;
-
-        location / {
-                try_files $uri $uri/ /index.php?$query_string;
-        }
-
-        location ~ \.php$ {
-                include snippets/fastcgi-php.conf;
-                fastcgi_pass unix:/run/php/php8.0-fpm.sock;
-        }
-
-        location ~ /\.ht {
-                deny all;
-        }
-
-        location ~ /.well-known {
-                allow all;
-        }
-}
-```
-{% endcode %}
-
-Then you need to enable your configuration, like this:
-
-```bash
-# If you use CentOS, you can ignore this command.
-sudo ln -s /etc/nginx/sites-available/themeparkpanel.conf /etc/nginx/sites-enabled/themeparkpanel.conf
-
-# Then restart NGINX
-systemctl restart nginx
-```
-{% endtab %}
-{% endtabs %}
 
 ## ThemeParkPanelPlus:
 
