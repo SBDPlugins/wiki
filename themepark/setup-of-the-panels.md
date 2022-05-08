@@ -127,18 +127,23 @@ exit
 
 We need to allow external access to this database, to make sure the Minecraft server can also connect to it.
 
-Open your _my.cnf_ file, and add the following text to the bottom:
+Open the `/etc/mysql/mariadb.conf.d/50-server.cnf` file, and replace the following setting with this new value:
 
-```
+```bash
 [mysqld]
+# Replace the 127.0.0.1 with 0.0.0.0
 bind-address=0.0.0.0
 ```
-
-_Not sure where you can find your my.cnf file? Use `find /etc -iname my.cnf` to locate it._
 
 Then run `systemctl restart mariadb` to restart your MariaDB server.
 
 #### 4. Editing the config and running installation:
+
+Make sure you are in the correct folder.
+
+```bash
+cd /var/www/themeparkpanel
+```
 
 Run the following commands:
 
