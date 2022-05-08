@@ -111,6 +111,12 @@ mkdir -p /var/www/themeparkpanel
 
 Connect to the SFTP of your server using your credentials. In your SFTP, move to the `/var/www/themeparkpanel/` directory and put the **files of the SSH ZIP** into it.
 
+Then running the following command to fix the file permissions:
+
+```bash
+chmod -R 755 storage/* bootstrap/cache/
+```
+
 #### 3. Setting up the database:
 
 Run the following commands step-by-step:
@@ -171,6 +177,12 @@ php artisan migrate --force
 ```
 
 Now your database is ready for usage.
+
+Run the next command to fix the file permissions:
+
+```bash
+chown -R www-data:www-data /var/www/themeparkpanel/*
+```
 
 #### 5. Rewriting users to your panel (public folder):
 
