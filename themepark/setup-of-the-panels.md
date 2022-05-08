@@ -98,7 +98,7 @@ curl -sS https://downloads.mariadb.com/MariaDB/mariadb_repo_setup | sudo bash
 apt update
 
 # Install dependencies
-apt -y install php8.1 php8.1-{common,dom,bcmath,mbstring,curl} openssl git unzip mariadb-server nginx
+apt -y install php8.1 php8.1-{cli,gd,mysql,pdo,mbstring,tokenizer,bcmath,xml,fpm,curl,zip} openssl git unzip mariadb-server nginx
 
 # Install composer
 curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
