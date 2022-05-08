@@ -7,18 +7,86 @@
 * A webhosting with:
   * 1 MYSQL database
   * An SMTP mail server
-  * Minimal PHP version 7.2 (support)
+  * PHP version 8.0.2 or higher
 * A minecraft server with:
   * The ThemePark plugin
   * The ThemeParkConnector plugin
 
-**You can install the panel in 2 ways. If you have your own VPS or your webhosting has SSH access, follow these steps. Otherwise, follow the steps for webhosting without SSH access.**
+### Installation **on a shared hosting**:
 
-### **Installation with SSH Access support:**
+Are you using a shared webhosting? Then follow this guide.\
+If you have your own webhosting on a server, then skip to [that part](setup-of-the-panels.md#installation-without-ssh-access).
 
-#### 1. Connecting to SSH
+#### 1. Setting up the database:
 
-This step is different for every webhosting. I'm going to follow the way for Vimexx, but you have to contact your Webhosting to find out the way to do it for you.
+Go to the homepage of DirectAdmin and go to **MySQL Management**. Click on **Create new Database** and fill in the data. Also, save this data somewhere, because you need it later.
+
+{% hint style="danger" %}
+After you've created it, you have to click on your database, and at **Access Hosts**, you have to put in a **% and click on Add Host**, so that the Minecraft server can find the database and can connect to it. **This is VERY important!**
+{% endhint %}
+
+Now you have to upload the SQL-file (which can be found in the Non-SSH zip), so that the plugin can upload his attractions. Open your database with PHPMyAdmin, and go to Import in the menu, and then choose the SQL-file at "File to import:". Then click on the Start button. Now it's uploaded.
+
+#### 2. Installing the panel to your webserver:
+
+You need to install [**Filezilla** ](https://filezilla-project.org)**or** [**WinSCP** ](https://winscp.net/eng/download.php)to send the files to your webhosting. You need to install the **Client**. At Filezilla, click on the icon on the left (**Site Manager**), and click on **New Site**. Then fill in your **credentials of the FTP server** and click on **Connect**.
+
+In your FTP, **select your domain** and put the **files of the Non-SSH ZIP** into your FTP.&#x20;
+
+Now copy the **.env.example** file and rename it to **.env**.&#x20;
+
+Then you have to change the settings in the **.env** file. Change the **APP\_URL** to the url of your panel, and **STORE\_URL** to the url of your store.
+
+At **DB\_** you can change the database credentials of the database you created.
+
+For the **MAIL\_** settings you have to create a mail account, and then lookup the **SMTP** server from your hosting. Ask your hosting for support if you are unable to do this.
+
+{% hint style="warning" %}
+**Pay attention!** Some hostings are using SSL or no encryption for the SMTP server. Then leave the MAIL\_ENCRYPTION setting empty.
+{% endhint %}
+
+#### 3. Rewriting users to your panel (public folder):
+
+Because of safety, all the files who are not intended for users, are in the /public folder. This means you have to redirect the users to that folder.
+
+**There is an **_**.htaccess**_** file in the ZIP for this. Most of the time, this file works out of the box.** _It's also included below, in the case it's missing._
+
+{% code title=".htaccess" %}
+```typescript
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews
+    </IfModule>
+    
+    RewriteEngine On
+    
+    RewriteCond %{REQUEST_FILENAME} -d [OR]
+    RewriteCond %{REQUEST_FILENAME} -f
+    RewriteRule ^ ^$1 [N]
+
+    RewriteCond %{REQUEST_URI} (\.\w+$) [NC]
+    RewriteRule ^(.*)$ public/$1 
+
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ server.php
+</IfModule>
+```
+{% endcode %}
+
+_Source:_ [_https://gist.github.com/liaotzukai/8e61a3f6dd82c267e05270b505eb6d5a_](https://gist.github.com/liaotzukai/8e61a3f6dd82c267e05270b505eb6d5a)__
+
+### **Installation on your own server:**
+
+_We'll assume here that you already have a web server running. Both Apache2 and Nginx are supported. **Is this not the case**? On the internet you can find a lot of information about the installation._
+
+#### 1. Connecting to SFTP
+
+You need to install [**Filezilla** ](https://filezilla-project.org)**or** [**WinSCP** ](https://winscp.net/eng/download.php)to send the files to your server. You need to install the **Client**. At Filezilla, click on the icon on the left (**Site Manager**), and click on **New Site**. Then fill in your **credentials of your server** and click on **Connect**.
+
+In your SFTP, **select your domain** and put the **files of the SSH ZIP** into your server.&#x20;
+
+#### 2. Connecting to SSH
 
 If you are using Windows, you need PuTTY or an equivalent program to connect to the SSH. You can download it at [https://www.putty.org/](https://www.putty.org)
 
@@ -26,19 +94,39 @@ If you are using Windows, you need PuTTY or an equivalent program to connect to 
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <ol><li>Open PuTTY</li><li>Enter the hostname of your webhosting at "Host Name".</li><li>Enter the port of your webhosting at "Port".</li><li>Click on Open.</li><li>Enter the username and password of your DirectAdmin account.</li><li>Done! You are connected to your SSH.</li></ol> | <ol><li>Open the Terminal.</li><li><p>Enter the command: </p><pre><code>ssh -p &#x3C;Port> &#x3C;Username>@&#x3C;Hostname></code></pre></li><li>At &#x3C;Hostname>, enter your hostname. At &#x3C;Username>, enter the username of your DirectAdmin account. At &#x3C;Port>, enter the port.</li><li>Enter the password of your DirectAdmin account</li><li>Done! You are connected to your SSH.</li></ol> |
 
-#### 2. Connecting to FTP
-
-You need to install [**Filezilla** ](https://filezilla-project.org)**or** [**WinSCP** ](https://winscp.net/eng/download.php)to send the files to your webhosting. You need to install the **Client**. At Filezilla, click on the icon on the left (**Site Manager**), and click on **New Site**. Then fill in your **credentials of the FTP server** and click on **Connect**.
-
-In your FTP, **select your domain** and put the **files of the SSH ZIP** into your FTP.&#x20;
-
 #### 3. Setting up the database:
 
-Go to the homepage of DirectAdmin and go to **MySQL Management**. Click on **Create new Database** and fill in the data. Also, save this data somewhere, because you need it later.
+First, we install a MariaDB server. If you already have one running, skip these commands.
 
-{% hint style="danger" %}
-After you've created it, you have to click on your database, and at **Access Hosts**, you have to put in a **% and click on Add Host**, so that the Minecraft server can find the database and can connect to it. **This is VERY important!**
-{% endhint %}
+```bash
+curl -sS https://downloads.mariadb.com/MariaDB/mariadb_repo_setup | sudo bash
+apt -y install mariadb-server
+```
+
+Then we setup the database itself.
+
+```sql
+mysql -u root -p
+
+# Make sure to replace 'yourPassword' with a secure password
+CREATE USER 'themeparkpanel'@'%' IDENTIFIED BY 'yourPassword';
+CREATE DATABASE panel;
+GRANT ALL PRIVILEGES ON panel.* TO 'themeparkpanel'@'%' WITH GRANT OPTION;
+exit
+```
+
+We need to allow external access to this database, to make sure the Minecraft server can also connect to it.
+
+Open your _my.cnf_ file, and add the following text to the bottom:
+
+```
+[mysqld]
+bind-address=0.0.0.0
+```
+
+_Not sure where you can find your my.cnf file? Use `find /etc -iname my.cnf` to locate it._
+
+Then run `systemctl restart mariadb` to restart your MariaDB server.
 
 #### 4. Editing the config and running installation
 
@@ -59,7 +147,7 @@ For the **MAIL\_** settings you have to create a mail account, and then lookup t
 **Pay attention!** Some hostings are using SSL or no encryption for the SMTP server. Then leave the MAIL\_ENCRYPTION setting empty.
 {% endhint %}
 
-Then run the following commands to install your panel and create your database:
+Then run the following commands to install your panel and populate your database:
 
 ```bash
 composer install --no-dev --optimize-autoloader
@@ -73,7 +161,7 @@ Now your database is ready for usage.
 
 Because of safety, all the files who are not intended for users, are in the /public folder. This means you have to redirect the users to that folder.
 
-**Please choose the type of web server you want to use.** If you don't know which type is used, try the Apache2 configuration first. Most shared hostings use Apache2.
+**Please choose the type of web server you are using.**
 
 {% tabs %}
 {% tab title="Apache2" %}
@@ -219,67 +307,6 @@ systemctl restart nginx
 ```
 {% endtab %}
 {% endtabs %}
-
-### Installation without SSH Access:
-
-#### 1. Setting up the database:
-
-Go to the homepage of DirectAdmin and go to **MySQL Management**. Click on **Create new Database** and fill in the data. Also, save this data somewhere, because you need it later.
-
-{% hint style="danger" %}
-After you've created it, you have to click on your database, and at **Access Hosts**, you have to put in a **% and click on Add Host**, so that the Minecraft server can find the database and can connect to it. **This is VERY important!**
-{% endhint %}
-
-Now you have to upload the SQL-file (which can be found in the Non-SSH zip), so that the plugin can upload his attractions. Open your database with PHPMyAdmin, and go to Import in the menu, and then choose the SQL-file at "File to import:". Then click on the Start button. Now it's uploaded.
-
-#### 2. Installing the panel to your webserver:
-
-You need to install [**Filezilla** ](https://filezilla-project.org)**or** [**WinSCP** ](https://winscp.net/eng/download.php)to send the files to your webhosting. You need to install the **Client**. At Filezilla, click on the icon on the left (**Site Manager**), and click on **New Site**. Then fill in your **credentials of the FTP server** and click on **Connect**.
-
-In your FTP, **select your domain** and put the **files of the Non-SSH ZIP** into your FTP.&#x20;
-
-Now copy the **.env.example** file and rename it to **.env**.&#x20;
-
-Then you have to change the settings in the **.env** file. Change the **APP\_URL** to the url of your panel, and **STORE\_URL** to the url of your store.
-
-At **DB\_** you can change the database credentials of the database you created.
-
-For the **MAIL\_** settings you have to create a mail account, and then lookup the **SMTP** server from your hosting. Ask your hosting for support if you are unable to do this.
-
-{% hint style="warning" %}
-**Pay attention!** Some hostings are using SSL or no encryption for the SMTP server. Then leave the MAIL\_ENCRYPTION setting empty.
-{% endhint %}
-
-#### 3. Rewriting users to your panel (public folder):
-
-Because of safety, all the files who are not intended for users, are in the /public folder. This means you have to redirect the users to that folder.
-
-**There is an **_**.htaccess**_** file in the ZIP for this. Most of the** time, **this file works fine out of the box.** _It's also included below, in the case it's missing._
-
-{% code title=".htaccess" %}
-```typescript
-<IfModule mod_rewrite.c>
-    <IfModule mod_negotiation.c>
-        Options -MultiViews
-    </IfModule>
-    
-    RewriteEngine On
-    
-    RewriteCond %{REQUEST_FILENAME} -d [OR]
-    RewriteCond %{REQUEST_FILENAME} -f
-    RewriteRule ^ ^$1 [N]
-
-    RewriteCond %{REQUEST_URI} (\.\w+$) [NC]
-    RewriteRule ^(.*)$ public/$1 
-
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteRule ^ server.php
-</IfModule>
-```
-{% endcode %}
-
-_Source:_ [_https://gist.github.com/liaotzukai/8e61a3f6dd82c267e05270b505eb6d5a_](https://gist.github.com/liaotzukai/8e61a3f6dd82c267e05270b505eb6d5a)__
 
 ## ThemeParkPanelPlus:
 
