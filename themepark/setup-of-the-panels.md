@@ -42,7 +42,7 @@ At **DB\_** you can change the database credentials of the database you created.
 For the **MAIL\_** settings you have to create a mail account, and then lookup the **SMTP** server from your hosting. Ask your hosting for support if you are unable to do this.
 
 {% hint style="warning" %}
-**Pay attention!** Some hostings are using SSL. Change the `MAIL_ENCRYPTION` setting to `ssl`. No encryption provided at all? Then leave the `MAIL_ENCRYPTION` setting empty.
+**Pay attention!** Some hostings only support SSL (instead of TLS). Change the `MAIL_ENCRYPTION` setting to `ssl`. No encryption provided at all? Then leave the `MAIL_ENCRYPTION` setting empty.
 {% endhint %}
 
 #### 3. Rewriting users to your panel (public folder):
@@ -165,7 +165,7 @@ At **DB\_** you can change the database credentials of the database you created.
 For the **MAIL\_** settings you have to create a mail account, and then lookup the **SMTP** server from your hosting. Ask your hosting for support if you are unable to do this.
 
 {% hint style="warning" %}
-**Pay attention!** Some hostings are using SSL. Change the `MAIL_ENCRYPTION` setting to `ssl`. No encryption provided at all? Then leave the `MAIL_ENCRYPTION` setting empty.
+**Pay attention!** Some hostings only support SSL (instead of TLS). Change the `MAIL_ENCRYPTION` setting to `ssl`. No encryption provided at all? Then leave the `MAIL_ENCRYPTION` setting empty.
 {% endhint %}
 
 Then run the following commands to install your panel and populate your database:
