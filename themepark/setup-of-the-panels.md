@@ -29,7 +29,7 @@ Now you have to upload the SQL-file (which can be found in the Non-SSH zip), so 
 
 #### 2. Installing the panel to your webserver:
 
-You need to install [**Filezilla** ](https://filezilla-project.org)**or** [**WinSCP** ](https://winscp.net/eng/download.php)to send the files to your webhosting. You need to install the **Client**. At Filezilla, click on the icon on the left (**Site Manager**), and click on **New Site**. Then fill in your **credentials of the FTP server** and click on **Connect**.
+You need to install [**Filezilla** ](https://filezilla-project.org/)**or** [**WinSCP** ](https://winscp.net/eng/download.php)to send the files to your webhosting. You need to install the **Client**. At Filezilla, click on the icon on the left (**Site Manager**), and click on **New Site**. Then fill in your **credentials of the FTP server** and click on **Connect**.
 
 In your FTP, **select your domain** and put the **files of the Non-SSH ZIP** into your FTP.&#x20;
 
@@ -42,7 +42,7 @@ At **DB\_** you can change the database credentials of the database you created.
 For the **MAIL\_** settings you have to create a mail account, and then lookup the **SMTP** server from your hosting. Ask your hosting for support if you are unable to do this.
 
 {% hint style="warning" %}
-**Pay attention!** Some hostings are using SSL or no encryption for the SMTP server. Then leave the MAIL\_ENCRYPTION setting empty.
+**Pay attention!** Some hostings are using SSL. Change the `MAIL_ENCRYPTION` setting to `ssl`. No encryption provided at all? Then leave the `MAIL_ENCRYPTION` setting empty.
 {% endhint %}
 
 #### 3. Rewriting users to your panel (public folder):
