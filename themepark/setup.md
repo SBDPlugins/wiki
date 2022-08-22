@@ -10,9 +10,9 @@ For ThemeParkPlus you need [WorldEdit ](https://dev.bukkit.org/projects/worldedi
 
 ## ThemeParkConnector:
 
-_This plugin is only required if you want to use ThemeParkPanel\(Plus\). It will connect your Minecraft server with our panel._
+_This plugin is only required if you want to use ThemeParkPanel(Plus). It will connect your Minecraft server with our panel._
 
-Just put this plugin in your **/plugins folder**. ****For usage with the panel, you have to connect **ThemePark** to the database that you're going to use for the panel. Please see _**step 2**_ of the ThemeParkPanel installation.
+Just put this plugin in your **/plugins folder**. **** For usage with the panel, you have to connect **ThemePark** to the database that you're going to use for the panel. Please see _**step 2**_ of the ThemeParkPanel installation.
 
 If you're going to install the **ThemeParkPanelPlus**, you have to change some things in the settings.yml of the **ThemeParkConnector.** Change it to something like this:
 
@@ -27,4 +27,3 @@ socket:
 {% endcode %}
 
 _You don't have to touch the **url**._ At the **panel**, you have to change it to the **panel URL**. If your panel is located at **https://something.com/panel**, then you have to enter **https://something.com/panel/panel/** there. Also, you have to make up an ID, that is **unique** for your server, like your **server name**. Put it at the **id**.
-

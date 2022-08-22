@@ -1,8 +1,8 @@
 # Table of contents
 
-* [Homepage](README.md)
+* [Home](README.md)
 
-## ThemePark\(Plus\) <a id="themepark"></a>
+## ThemePark(Plus) <a href="#themepark" id="themepark"></a>
 
 * [Setup](themepark/setup.md)
 * [Setup of the Panels](themepark/setup-of-the-panels.md)
@@ -10,6 +10,7 @@
 * [Permissions](themepark/permissions.md)
 * [FAQ](themepark/faq.md)
 * [Upgrading the Panels](themepark/v2.x.md)
+* [Developers](themepark/developers.md)
 
 ## ParkPlusMC
 
@@ -17,19 +18,16 @@
 
 ## VehiclesPlus
 
-* [VehiclePlus](vehiclesplus/vehicleplus-1.md)
 * [Setup](vehiclesplus/vehicleplus.md)
-* [Configuration](vehiclesplus/configuration.md)
+* [Configuration](vehiclesplus/configuration/README.md)
+  * [Adding new vehicles](vehiclesplus/configuration/adding-new-vehicles.md)
+  * [Adding new rims](vehiclesplus/configuration/adding-new-rims.md)
+  * [Adding new fuel](vehiclesplus/configuration/adding-new-fuel.md)
+  * [Spawning vehicle parts](vehiclesplus/configuration/spawning-vehicle-parts.md)
 * [Commands](vehiclesplus/commands.md)
 * [Permissions](vehiclesplus/permissions.md)
 * [FAQ](vehiclesplus/faq.md)
-
-## VehiclesPlus \(Customizing\)
-
-* [Adding new vehicles](vehiclesplus-customizing/adding-new-vehicles.md)
-* [Adding new rims](vehiclesplus-customizing/adding-new-rims.md)
-* [Adding new fuel](vehiclesplus-customizing/adding-new-fuel.md)
-* [Spawning vehicle parts](vehiclesplus-customizing/spawning-vehicle-parts.md)
+* [Developers](vehiclesplus/developers.md)
 
 ## ActionFoto
 
@@ -38,16 +36,13 @@
 * [Permissions](actionfoto/permissions.md)
 * [FAQ](actionfoto/faq.md)
 
-## ThemePark Ridecount Add-on
+## RidecountViewer
 
-* [Setup](themepark-ridecount-add-on/setup.md)
-* [Usage](themepark-ridecount-add-on/usage.md)
-* [Permissions](themepark-ridecount-add-on/permissions.md)
-* [FAQ](themepark-ridecount-add-on/faq.md)
+* [Setup](ridecountviewer/setup.md)
+* [Usage](ridecountviewer/usage.md)
+* [Permissions](ridecountviewer/permissions.md)
+* [FAQ](ridecountviewer/faq.md)
 
-## For developers
+## MCSkinViewer
 
-* [Maven repo](for-developers/maven-repo.md)
-* [Javadocs](for-developers/javadocs.md)
-* [Examples](for-developers/examples.md)
-
+* [API Documentation](mcskinviewer/api-documentation.md)

@@ -1,8 +1,12 @@
-# Examples
+# Developers
 
-## VehiclesPlus:
+### Javadoc:
 
-### Example 1: Broadcast warning if player is driving too fast
+[Click here](https://sbdevelopment.tech/javadoc/vehiclesplus/)
+
+### Examples:
+
+#### Example 1: Broadcast warning if player is driving too fast
 
 This code will broadcast a waning to everyone with the permission **myplugin.staff** if someone drives more than 80 km/h. There is a cooldown of 5 seconds, so that there is no spam.
 
@@ -45,6 +49,3 @@ private boolean hasCooldown(Player driver) {
     return hasCooldown;
 }
 ```
-
-
-

@@ -13,6 +13,5 @@ fuelItem:
   type: LAVA_BUCKET
 ```
 
-   4. Edit the values in this file to match your desired rim design.  
-   5. Reload the plugin with `/v reload`
-
+&#x20;  4\. Edit the values in this file to match your desired rim design.\
+&#x20;  5\. Reload the plugin with `/v reload`
