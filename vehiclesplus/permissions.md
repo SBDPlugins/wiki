@@ -64,20 +64,20 @@ Access the `/addon givewheel` command
 
 ## Extra permissions
 
-**vp.buy.\<Type>**
+**vp.buy.&lt;Type&gt;**
 
-_This is a default permission, and can be changed per every base vehicle._\
+_This is a default permission, and can be changed per every base vehicle._  
 Players with this permission are able to buy this vehicle from the shop.
 
 Example:
 
 To allow a player to purchase the vehicle named `ExampleCar`, give them the permission `vp.buy.ExampleCar`.
 
-**vp.ride.\<Type>**
+**vp.ride.&lt;Type&gt;**
 
-_This is a default permission, and can be changed per every base vehicle._\
-Players with this permission are able to enter this vehicle from the shop.\
-If `enterWithoutRidePermission` **** is enabled for this vehicle, the player can join the non-steer seats without the permission.
+_This is a default permission, and can be changed per every base vehicle._  
+Players with this permission are able to enter this vehicle from the shop.  
+If `enterWithoutRidePermission` ****is enabled for this vehicle, the player can join the non-steer seats without the permission.
 
 
 
@@ -92,3 +92,4 @@ Players with this permission have the ability to access and modify other players
 #### vp.mechanic
 
 Players with this permission have the ability to open the upgrades menu in a vehicle
+

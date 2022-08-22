@@ -75,7 +75,7 @@ The socket can't connect if:
 
 ### How can I setup the OpenAudioMC integration?
 
-1. Go to the [CraftMend Account panel](https://account.craftmend.com/). Create a new account or login to your account. Get a new fingerprint from [the fingerprint page](https://account.craftmend.com/account/fingerprint) and run the connect command (/oa fingerprint \<FingerPrint>) in your server. Then go to the [API page](https://account.craftmend.com/account/api). Copy the URL labeled **Online Players - V1** and paste it into the .env file at **OPENAUDIOMC\_URL**.
+1. Go to the [CraftMend Account panel](https://account.craftmend.com). Create a new account or login to your account. Get a new fingerprint from [the fingerprint page](https://account.craftmend.com/account/fingerprint) and run the connect command (/oa fingerprint \<FingerPrint>) in your server. Then go to the [API page](https://account.craftmend.com/account/api). Copy the URL labeled **Online Players - V1** and paste it into the .env file at **OPENAUDIOMC\_URL**.
 2. Change **{your api key}** into the API token you can get on the same page, and change **{server id}** into the Server ID of the server you want to connect (you can find that on the server page).
 
 ![](<../.gitbook/assets/image (1).png>)

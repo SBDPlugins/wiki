@@ -289,4 +289,5 @@ hitbox:
   height: 1.0
 ```
 
-4\. When you are done editing, save the file and use `/v reload` to reload the data.
+4. When you are done editing, save the file and use `/v reload` to reload the data.
+

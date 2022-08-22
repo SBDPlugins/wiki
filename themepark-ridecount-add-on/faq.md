@@ -10,3 +10,4 @@ To look up the names of offline bedrock players, we use an API. This API require
 4. Done! Restart your server, and now you should see the correct player names for Bedrock players.
 
 _**Pay attention! Because of privacy reasons, if the player has disabled viewing their name for non-friends, you can only view their name if you are a friend of them.**_
+

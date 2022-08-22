@@ -1,9 +1,6 @@
 # Setup
 
-### Downloading the dependencies:
+Just download the plugin on the site, and install it into your /plugins folder. The plugin will do everything for you, and you can change everything in the files.
 
-This plugin requires [**MapReflectionAPI** ](https://polymart.org/resource/mapreflectionapi-1-12-1-19.2576)and [**ProtocolLib** ](https://www.spigotmc.org/resources/protocollib.1997/)to function. Make sure you have the right version of both plugins.
+**Note that there are 2 dependencies needed to run this plugin. You can find them** [**here**](https://www.spigotmc.org/resources/api-mapmanager.19198/) **and** [**here**](https://www.spigotmc.org/resources/api-packetlistenerapi.2930/)**.**
 
-### Installing the plugin:
-
-Download [the plugin from Polymart](https://polymart.org/resource/actionfoto.2245). Then just install it into your `plugins` folder. The plugin will start up and function out of the box.

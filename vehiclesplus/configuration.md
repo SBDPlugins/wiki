@@ -157,7 +157,7 @@ sounds:
 
 ### Understanding sounds.yml
 
-Each vehicle can have its own sound effects associated with it. Currently, the example resource pack only provides sounds for the example car.&#x20;
+Each vehicle can have its own sound effects associated with it. Currently, the example resource pack only provides sounds for the example car. 
 
 There are **six** different types of sounds that can be made during a vehicle's motion:
 
@@ -217,7 +217,7 @@ Within a locale file, you are able to change the messages that are sent by Vehic
 
 ### Creating a Locale File
 
-1. Begin by making a copy of the `lang_en.yml` file, located under `plugins/VehiclesPlus/locale`. This is the default English locale file.&#x20;
+1. Begin by making a copy of the `lang_en.yml` file, located under `plugins/VehiclesPlus/locale`. This is the default English locale file. 
 2. Rename the file to match the language that you are translating. For example, Spanish would be `lang_es.yml`. To view a list of standard 2 letter language names, click [here](https://www.sitepoint.com/iso-2-letter-language-codes/). You do not necessarily have to match these names, but it is recommended.
 3. Once renamed, open the file and begin editing the messages. Once you are satisfied, save the file.
 4. Open your `config.yml` file. Find the line that says `locale: en` and edit it to match the name of your locale file. For example, if I had created `lang_es.yml`, I would change the line to `locale: es`.
@@ -226,3 +226,4 @@ Within a locale file, you are able to change the messages that are sent by Vehic
 {% hint style="info" %}
 Do not include the `lang`\_ prefix or `.yml` ending on the `locale: en` line in your configuration.
 {% endhint %}
+
