@@ -19,11 +19,11 @@
 ## VehiclesPlus
 
 * [Setup](vehiclesplus/vehicleplus.md)
-* [Configuration](vehiclesplus/configuration/README.md)
-  * [Adding new vehicles](vehiclesplus/configuration/adding-new-vehicles.md)
-  * [Adding new rims](vehiclesplus/configuration/adding-new-rims.md)
-  * [Adding new fuel](vehiclesplus/configuration/adding-new-fuel.md)
-  * [Spawning vehicle parts](vehiclesplus/configuration/spawning-vehicle-parts.md)
+* [Configuration](vehiclesplus/configuration.md)
+  * [Adding new vehicles](vehiclesplus-customizing/adding-new-vehicles.md)
+  * [Adding new rims](vehiclesplus-customizing/adding-new-rims.md)
+  * [Adding new fuel](vehiclesplus-customizing/adding-new-fuel.md)
+  * [Spawning vehicle parts](vehiclesplus-customizing/spawning-vehicle-parts.md)
 * [Commands](vehiclesplus/commands.md)
 * [Permissions](vehiclesplus/permissions.md)
 * [FAQ](vehiclesplus/faq.md)
@@ -38,11 +38,7 @@
 
 ## RidecountViewer
 
-* [Setup](ridecountviewer/setup.md)
-* [Usage](ridecountviewer/usage.md)
-* [Permissions](ridecountviewer/permissions.md)
-* [FAQ](ridecountviewer/faq.md)
-
-## MCSkinViewer
-
-* [API Documentation](mcskinviewer/api-documentation.md)
+* [Setup](themepark-ridecount-add-on/setup.md)
+* [Usage](themepark-ridecount-add-on/usage.md)
+* [Permissions](themepark-ridecount-add-on/permissions.md)
+* [FAQ](themepark-ridecount-add-on/faq.md)

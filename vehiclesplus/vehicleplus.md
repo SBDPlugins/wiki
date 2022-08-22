@@ -32,7 +32,7 @@ Your URL must be a **direct link** to your resource pack! If it does not end in 
 
 ## (Optional) Editing your configuration
 
-Once your server has been restarted, you will have new configuration files under `plugins/VehiclesPlus`. Take a look at our [Configuration page](configuration/) to determine whether you would like to change your configuration. Once you have edited the configurations, save your files and restart the server.
+Once your server has been restarted, you will have new configuration files under `plugins/VehiclesPlus`. Take a look at our [Configuration page](configuration.md) to determine whether you would like to change your configuration. Once you have edited the configurations, save your files and restart the server.
 
 ## Setting Up Permissions
 

@@ -22,7 +22,7 @@ Once you have downloaded your new vehicles, it’s time to combine them into a s
 2. Unarchive the new vehicle archive into a separate folder.
 3. Move the `assets` folder from the new vehicle archive to the Example Resource Pack folder. It should combine with the `assets` folder that is already present in the Example Resource Pack folder.
 4. Use 7-zip to re-archive the resource pack.
-5. Follow along with Step 2 of the [Installing the Resource Pack guide](../vehicleplus.md#optional-installing-your-resource-pack).
+5. Follow along with Step 2 of the [Installing the Resource Pack guide](../vehiclesplus/vehicleplus.md#optional-installing-your-resource-pack).
 
 ## Adding the vehicles to the plugin
 

@@ -1,5 +1,4 @@
 # Permissions
 
-* AF.admin - The general admin permission
-* AF.give - The give command permission
-
+* af.admin - The general admin permission
+* af.give - The give command permission
